@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.capg.hcstm.HcmsTestManagementSystemApplication" 
+    project="hcms-test-management-system" 
+    file="/hcms-test-management-system/src/main/java/com/capg/hcstm/HcmsTestManagementSystemApplication.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="1174" x="91" y="2"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.capg.hcstm.entity.TestManagement" project="hcms-test-management-system" 
+    file="/hcms-test-management-system/src/main/java/com/capg/hcstm/entity/TestManagement.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="200" y="276"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.capg.hcstm.controller.TestController" project="hcms-test-management-system" 
+    file="/hcms-test-management-system/src/main/java/com/capg/hcstm/controller/TestController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="604" y="232"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="com.capg.hcstm.service.ITestService" project="hcms-test-management-system" 
+    file="/hcms-test-management-system/src/main/java/com/capg/hcstm/service/ITestService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="178" width="410" x="402" y="368"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="5" language="java" name="com.capg.hcstm.service.TestServiceImpl" project="hcms-test-management-system" 
+    file="/hcms-test-management-system/src/main/java/com/capg/hcstm/service/TestServiceImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="196" width="407" x="401" y="590"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="6" language="java" name="com.capg.hcstm.repository.TestRepo" project="hcms-test-management-system" 
+    file="/hcms-test-management-system/src/main/java/com/capg/hcstm/repository/TestRepo.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="192" width="240" x="65" y="601"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="com.capg.hcstm.exception.GlobalExceptionHandler" 
+    project="hcms-test-management-system" 
+    file="/hcms-test-management-system/src/main/java/com/capg/hcstm/exception/GlobalExceptionHandler.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="409" x="891" y="120"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.capg.hcstm.exception.NoTestIsAvailableException" 
+    project="hcms-test-management-system" 
+    file="/hcms-test-management-system/src/main/java/com/capg/hcstm/exception/NoTestIsAvailableException.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="221" x="904" y="316"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.capg.hcstm.exception.TestIdDoesNotExistException" 
+    project="hcms-test-management-system" 
+    file="/hcms-test-management-system/src/main/java/com/capg/hcstm/exception/TestIdDoesNotExistException.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="236" x="904" y="477"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.capg.hcstm.exception.ErrorInfo" project="hcms-test-management-system" 
+    file="/hcms-test-management-system/src/main/java/com/capg/hcstm/exception/ErrorInfo.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="267" width="166" x="1161" y="312"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.capg.hcstm.exception.TestIdAlreadyExistsException" 
+    project="hcms-test-management-system" 
+    file="/hcms-test-management-system/src/main/java/com/capg/hcstm/exception/TestIdAlreadyExistsException.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="125" width="239" x="903" y="612"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="12">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="13" name="testService"/>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="15">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="16">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="17" name="testRepo"/>      
+      <multiplicity id="18" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
