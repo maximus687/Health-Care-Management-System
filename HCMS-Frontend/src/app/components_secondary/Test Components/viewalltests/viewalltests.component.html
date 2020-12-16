@@ -1,0 +1,70 @@
+
+
+<div class="container">
+  <body>
+    <div id="test">
+        <div class="container">
+            <br>
+            <h1 style="text-align: center; font-family:fantasy;">All Tests :</h1>
+            <br>
+            <div class="w3-animate-zoom">
+                <img src="assets/ee.jpg" style="width: 20%;" class="mx-auto
+                    d-block">
+            </div>
+            <br>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1
+                    col-md-offset-2">
+
+   <table border="3"   class="table table-hover">
+   <thead>
+   <tr class="d-flex" bgcolor="gray">
+
+     <th class="col-4">Test Id</th>
+     <th class="col-4">Test Name</th>
+
+     <th class="col-4">Delete</th>
+
+     </tr>
+   </thead>
+   <tbody>
+       <tr *ngFor="let test of testList ;let i=index;" class="d-flex" >
+         <td  class="col-4">{{test.testId}}</td>
+
+
+
+           <td class="col-4">{{test.testName}}</td>
+
+           <td class="col-4" ><button type="submit" value="Delete" class="btn btn-danger btn-lg" (click)="deleteTest(test.testId)">Delete</button></td>
+
+                  </tr>
+   </tbody>
+     </table>
+
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

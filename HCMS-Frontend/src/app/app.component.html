@@ -1,0 +1,60 @@
+<body>
+<div id="app">
+  <nav class="navbar navbar-expand navbar-dark bg-dark" >
+    <img src="assets/logo.jpeg" alt="Logo" style="width:60px; margin-right:2% ; margin-top:
+            0%;">
+    <a href="#" class="navbar-brand">Health Care System</a>
+    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+      <li class="nav-item">
+        <a href="/home" class="nav-link" routerLink="home">Home </a>
+      </li>
+      <li class="nav-item" *ngIf="isAdminLoggedIn">
+        <a href="/manage-center" class="nav-link" routerLink="addCenter">Add Centers</a>
+      </li>
+      <li class="nav-item" *ngIf="isAdminLoggedIn">
+        <a href="/manage-center" class="nav-link" routerLink="viewAllCenters">View All Centers</a>
+      </li>
+      <li class="nav-item">
+        <a href="/manage-test" class="nav-link" *ngIf="isAdminLoggedIn" routerLink="testComponent">Medical Tests</a>
+      </li>
+      <li class="nav-item">
+        <a href="/manage-appointments" class="nav-link" *ngIf="isAdminLoggedIn"
+          routerLink="viewAllAppointment">Appointments</a>
+      </li>
+      <li class="nav-item">
+        <a href="/manage-appointments" class="nav-link" *ngIf="isUserLoggedIn"
+          routerLink="makeAppointment">Book Appointment</a>
+      </li>
+      <li class="nav-item">
+        <a href="/manage-appointments" class="nav-link" *ngIf="isUserLoggedIn" routerLink="checkAppointment">Check
+          Appointments</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+      <li class="nav-item">
+        <a href="/register" class="nav-link" routerLink="register">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a href="/login" class="nav-link" routerLink="login">Login</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+      <li class="nav-item">
+        <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
+      </li>
+      <li class="nav-item">
+        <a href class="nav-link" (click)="logout()">LogOut</a>
+      </li>
+    </ul>
+  </nav>
+  
+
+  <div class="container">
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
+</body>
+<!-- <app-footer></app-footer> -->

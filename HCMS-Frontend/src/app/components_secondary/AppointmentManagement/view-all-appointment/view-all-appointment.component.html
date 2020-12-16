@@ -1,0 +1,142 @@
+<body>
+  <div id="order">
+    <div class="container">
+      <br>
+
+      <div class="w3-animate-zoom">
+        <img src="assets/bd.png" style="width: 30%;" class="mx-auto
+                  d-block">
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center">
+
+        <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1
+                  col-md-offset-2">
+
+          <form [formGroup]="appointmentForm" (ngSubmit)="OnSubmit()">
+            <h1 align="center" class="bg-white text-secondary">Select Center:</h1>
+
+
+            <div class="form-group">
+              <label>Centre Present:</label>
+              <select class="form-control" formControlName="selectedCenterId" required>
+                <option value="">Please select the Centre</option>
+                <option *ngFor="let center of centers" [value]="center.centerId">
+                  {{ center.centerName }}
+                </option>
+              </select>
+
+              <div *ngIf="selectedCenterId.invalid && (selectedCenterId.dirty || selectedCenterId.touched)"
+                class="alert alert-danger">
+                <div *ngIf="selectedCenterId.errors.required">Center Is required</div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit" [disabled]="appointmentForm.invalid">Submit</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div *ngIf="successSubmitted">
+  <br>
+  <br>
+
+
+  <h1 align="center" class="bg-white text-secondary">
+
+    All Appointments : </h1>
+  <div class="w3-animate-zoom">
+    <img src="assets/cb.jpg" style="width: 20%;" class="mx-auto d-block">
+  </div>
+
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th class="text-center">Appointment Id</th>
+        <th class="text-center">User Id</th>
+        <th class="text-center">Test</th>
+        <th class="text-center">Center</th>
+        <th class="text-center">Date and Time Of Appointment</th>
+        <th class="text-center">Status</th>
+        <th class='text-center'></th>
+        <th class='text-center'></th>
+      </tr>
+    </thead>
+    <tr *ngFor="let appoint of appointmentList">
+      <td>{{appoint.appointmentId}}</td>
+      <td>{{appoint.userId}}</td>
+      <td>{{appoint.testId}}</td>
+      <td>{{appoint.centreId}}</td>
+      <td>{{appoint.dateTime  | date : "medium"}}</td>
+      <td>{{appoint.status | uppercase}}</td>
+
+      <td>
+        <button (click)="approveAppointment(appoint.appointmentId)" class="button button1"
+          color="green">Approve</button>
+      </td>
+      <td>
+        <button (click)="disapproveAppointment(appoint.appointmentId)" class="button button2">Disapprove</button>
+      </td>
+    </tr>
+  </table>
+</div>

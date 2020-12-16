@@ -1,0 +1,33 @@
+ <br>
+<br>
+
+<h1 align="center" class="bg-white text-secondary">
+
+  Diagnostic Center Management : </h1>
+<div class="w3-animate-zoom">
+  <img src="assets/aa.jpg" style="width: 20%;" class="mx-auto d-block">
+</div>
+
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Center Id</th>
+          <th>Center Name</th>
+          <th></th>
+        </tr>
+      </thead>
+         <tbody>
+       <tr *ngFor="let center of centerList ">
+         
+         <td>{{center.centerId}}</td>
+         <td>{{center.centerName}}</td>
+      
+         
+     
+           <td><button  (click)="delete(center.centerId)" type="button" class="btn btn-danger btn-sm">Delete Center</button></td>
+       </tr>
+      </tbody>
+    </table>
+
+     
+

@@ -1,0 +1,34 @@
+<div class="container">
+    <br>
+    <h1 style="text-align: center;">All Your Appointment : </h1>
+    <div class="w3-animate-zoom">
+        <img src="assets/cb.jpg" style="width: 20%;" class="mx-auto d-block">
+    </div>
+    <br>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1
+            col-md-offset-2">
+
+<table class="table table-bordered">
+   <thead  class="thead-dark">
+    <tr>
+        <th class="text-center">Appointment Id</th>
+        <th class="text-center">User Name</th>
+        <th class="text-center">Test</th>
+        <th class="text-center">Center</th>
+        <th class="text-center">Date and Time Of Appointment</th>
+        <th class="text-center">Status</th>
+    </tr>
+</thead> 
+    <tr *ngFor="let appoint of allUserAppointment">
+        <td>{{appoint.appointmentId}}</td>
+        <td>{{appoint.userId}}</td>
+        <td>{{appoint.testId}}</td>
+        <td>{{appoint.centreId}}</td>
+        <td>{{appoint.dateTime | date : "medium"}}</td>
+        <td>{{appoint.status | uppercase}}</td>
+    </tr>
+</table>
+        </div>
+        </div>
+        </div>

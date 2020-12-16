@@ -1,0 +1,40 @@
+
+<body>
+    <div id="test">
+        <div class="container">
+            <br>
+            <h1 style="text-align: center; font-family:fantasy;">Update Test :</h1>
+            <br>
+            <div class="w3-animate-zoom">
+                <img src="assets/ee.jpg" style="width: 20%;" class="mx-auto
+                    d-block">
+            </div>
+            <br>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1
+                    col-md-offset-2">
+    <form  class ="container col-md-6"  #myForm="ngForm">
+        <div class="form-group">
+            <label>TEST ID : </label>
+            <input  type="text" class="form-control" #testIdcontrol="ngModel" required id="testId" name="testId" [(ngModel)]="test.testId" pattern=".*[1-9][0-9]{4}" maxlength="5" class="form-control">
+        <div  *ngIf="testIdcontrol.touched && testIdcontrol.invalid" class="alert alert-danger" >Please enter testId which is numeric of 5 digits </div>
+        </div>
+  
+        
+    <div class="form-group">
+        <label >TEST NAME :</label>
+        <input type="text" class="form-control" #testNamecontrol="ngModel"
+        required ngModel [ngClass]="{'is.invalid': testNamecontrol.touched && testNamecontrol.invalid}" [(ngModel)]="test.testName" pattern=".*[A-Za-z]{3,15}" maxlength="15"id="testName" name="testName">
+        <div  *ngIf="testNamecontrol.touched && testNamecontrol.invalid" class="alert alert-danger">Please enter testName which is alphabet with min. length 3 and max.length 15</div>
+         </div>
+  
+  
+  
+  
+  
+        <input  type="submit" value="Add test" [disabled]="myForm.invalid" (click)="updateTest()" class="btn btn-success">
+  
+    </form>
+    
+    
+  </div>
