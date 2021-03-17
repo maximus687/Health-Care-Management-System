@@ -5,4 +5,4 @@
 
 
 ->Implemented Spring cloud for handling variable requests to the website and for the following reasons: 
-  High availability, fault tolerance, Microservices Discovery, etc.
+    High availability, fault tolerance, Microservices Discovery, etc.
